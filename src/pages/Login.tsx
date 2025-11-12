@@ -9,7 +9,7 @@ import { ThemeToggle } from '@/components/ThemeToggle';
 import { LanguageSelector } from '@/components/LanguageSelector';
 import { toast } from '@/hooks/use-toast';
 
-const API_BASE = "http://127.0.0.1:8787/api/auth";
+const API_BASE = "https://save-vault.zepedrofernandessampaio.workers.dev/api/auth";
 
 
 const Login = () => {

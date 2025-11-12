@@ -3,7 +3,7 @@ import { Game, GameSave } from '@/types'
 import { toast } from '@/hooks/use-toast'
 
 const STORAGE_KEY = 'games_data'
-const API_BASE = "http://127.0.0.1:8787";
+const API_BASE = "https://save-vault.zepedrofernandessampaio.workers.dev";
 
 export const useGames = () => {
   const [games, setGames] = useState<Game[]>(() => {
