@@ -49,7 +49,11 @@ export const useGames = () => {
       return {
         id: String(g.id),
         name: g.name,
-        coverImage: g.coverImage ?? g.coverUrl ?? '',
+        coverImage: g.coverImage
+          ? g.coverImage.startsWith('http')
+            ? g.coverImage
+            : `https://${g.coverImage}`
+          : g.coverUrl ?? '',
         saves,
         createdAt: g.createdAt ?? new Date().toISOString(),
       }
