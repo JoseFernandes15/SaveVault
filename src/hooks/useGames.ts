@@ -49,7 +49,7 @@ export const useGames = () => {
       return {
         id: String(g.id),
         name: g.name,
-        coverImage: g.coverImage ? `https://${g.coverImage}` : '',
+        coverImage: g.coverUrl ? `https://${g.coverUrl}` : '',
         saves,
         createdAt: g.createdAt ?? new Date().toISOString(),
       }
