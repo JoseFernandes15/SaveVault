@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-const API_BASE = "https://save-vault.zepedrofernandessampaio.workers.dev";
+const API_BASE = "https://save-vault.zepedrofernandessampaio.workers.dev/api/auth";
 
 export function useAuth() {
   const [user, setUser] = useState(null)
